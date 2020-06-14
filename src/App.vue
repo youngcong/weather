@@ -1,22 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BasicInfo></BasicInfo>
+    <Hourly></Hourly>
+    <DailyForecast></DailyForecast>
+    <Search></Search>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BasicInfo from './components/BasicInfo.vue'
+import Hourly from './components/Hourly'
+import DailyForecast from './components/DailyForecast'
+import Search from './components/Search'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BasicInfo,
+    Hourly,
+    DailyForecast,
+    Search
   }
 }
 </script>
 
-<style>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
